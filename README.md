@@ -1,12 +1,74 @@
-# React + Vite
+# Firebase Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React Todo application integrated with **Firebase Realtime Database**.  
+This project allows you to add, fetch, and delete tasks with a title, priority, timestamp, and status (done/undo).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- Add tasks with priority (High, Medium, Low).
+- Save tasks to **Firebase Realtime Database**.
+- Fetch all tasks from Firebase on page load.
+- Delete tasks from Firebase in real time.
+- Mark tasks as **Done/Undo** (local update).
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technologies Used
+- React (Hooks: useState, useEffect)
+- Firebase Realtime Database (REST API)
+- Tailwind CSS (for styling)
+
+---
+
+## ⚡ How to Run
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/firebase-todo.git
+Navigate to project folder:
+
+bash
+Copy code
+cd firebase-todo
+Install dependencies:
+
+bash
+Copy code
+npm install
+Start development server:
+
+bash
+Copy code
+npm run dev
+Open browser at http://localhost:5173/
+
+🔑 Firebase Setup
+Create a Firebase project at Firebase Console.
+
+Enable Realtime Database and set rules to:
+
+json
+Copy code
+{
+  "rules": {
+    ".read": true,
+    ".write": true
+  }
+}
+Copy your database URL and replace it inside App.js:
+
+js
+Copy code
+const firebaseUrl = "https://your-app-id-default-rtdb.firebaseio.com/tasks"
+✅ Future Improvements
+Update "Done/Undo" status directly in Firebase.
+
+Add Edit feature for tasks.
+
+User Authentication with Firebase Auth.
+
+📸 Screenshot
+(Add screenshot of your Todo UI here)
+
+👨‍💻 Author
+Developed with ❤️ by Taha
