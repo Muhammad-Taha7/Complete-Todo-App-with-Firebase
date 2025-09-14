@@ -68,7 +68,12 @@ Add Edit feature for tasks.
 User Authentication with Firebase Auth.
 
 📸 Screenshot
-(Add screenshot of your Todo UI here)
+
+<img width="1920" height="953" alt="image" src="https://github.com/user-attachments/assets/e8a3713d-9253-4992-b70c-96a3cd12bf64" />
+
+
+
+<img width="1255" height="272" alt="image" src="https://github.com/user-attachments/assets/4c5110d9-7d55-424a-89b3-825f3ac37b94" />
 
 👨‍💻 Author
 Developed with ❤️ by Taha
